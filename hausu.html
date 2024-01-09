@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Unspoken Films</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="Homepage.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+      <a href="films.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">FILMS</a>
+      <a href="news.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">NEWS</a>
+      <a href="actors.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ACTORS</a>
+    </div>
+  </div>
+
+  <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+    <a href="Homepage.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="films.html" class="w3-bar-item w3-button w3-padding-large">FILMS</a>
+    <a href="movies.html" class="w3-bar-item w3-button w3-padding-large">MOVIES</a>
+    <a href="news.html" class="w3-bar-item w3-button w3-padding-large">NEWS</a>
+    <a href="actors.html" class="w3-bar-item w3-button w3-padding-large">ACTORS</a>
+  </div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- The Tour Section -->
+  <div class="w3-black" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h1>Hausu</h1>
+      <h2>Summary</h2>
+      <p>Oshare is excited about spending summer vacation with her father until she finds out that his beautiful, freakishly serene girlfriend Ryouko would be going as well. Oshare decides she will be going to her aunt's house in the country instead. She brings with her her friends from school: Fanta (who likes to take pictures and daydreams a lot), Kun Fuu (who has very good reflexes), Gari (who is a major nerd), Sweet (who likes to clean), Mac (who eats a lot), and Melody (a musician). However, the girls are unaware that Oshare's aunt is actually dead and the house is actually haunted. When they arrive at the house, crazy events take place and the girls disappear one by one, while slowly discovering the secret behind all the madness.</p>
+      <p>(Source: MyDramaList)</p>
+      <img src="img/hausuh2.jpg" alt="image of Hausu" width="700px">
+      <p> Drama: Hausu</p>
+      <p> Country: Japan </p>
+      <p> Runtime: 88 Minutes</p>
+      <p> Release date: July 30, 1977 </p>
+      <h2> Review </h2>
+        <p>The amount of cinematography here is actually amazing. This film was made BEFORE the existence of digital cameras and it has a result of warm, dreamy, film-esque scenes. I truly believe this is one of the most beautiful horror films. The premise is a highschool girl called gorgeous, is mad at her dad for marrying another woman. So she decides to escape for a bit in the summer vacation by inviting her friends, Fantasy, Sweet, Melody, Prof, Mac, and Kung Fu, to her aunt’s house in the countryside and apparently that house is very haunted. The thing about the scary stuff in the movie is actually amazing. This film is scary but we cant forget about the fact that its very wacky. Everything is so stylized that it’s never actually a scary or gory film, just strange and silly, with no hint of its level of self-awareness. The whole film is like a mixture between the animated world and real life. It would be scary if it's made in 2023 but I think the bad 1970s cgi really has a charm.
+        </p>
+        <a href="hausucast.html"><h2>Cast</h2></a>
+
+      <h2>Fun facts about Hausu</h2>
+      <ul>
+      <li>Many of the ways the girls are attacked by the House were ideas provided by the daughter of the director, Nobuhiko Obayashi. These include the mattresses, the head from the well, the piano, and the mirror. So, essentially, this film was co-written by a 12-year-old Japanese girl. </li>
+      </ul>
+      <a href="Hausuphoto.html" class="w3-bar-item w3-button w3-padding-large"><h2>Hausu Photo Album</h2></a>
+
+  </div>
+
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <a href="https://www.instagram.com/x1nyuanism_/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+  <a href="https://pin.it/ytSPZpt"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+  <a href="https://twitter.com/jaykaismm"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 4000);
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>

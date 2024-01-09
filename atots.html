@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Unspoken Films</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="Homepage.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+      <a href="films.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">FILMS</a>
+      <a href="news.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">NEWS</a>
+      <a href="actors.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ACTORS</a>
+    </div>
+  </div>
+
+  <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+    <a href="Homepage.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="films.html" class="w3-bar-item w3-button w3-padding-large">FILMS</a>
+    <a href="movies.html" class="w3-bar-item w3-button w3-padding-large">MOVIES</a>
+    <a href="news.html" class="w3-bar-item w3-button w3-padding-large">NEWS</a>
+    <a href="actors.html" class="w3-bar-item w3-button w3-padding-large">ACTORS</a>
+  </div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- The Tour Section -->
+  <div class="w3-black" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h1>A Tale of 1000 Stars</h1>
+      <h2>Summary</h2>
+      <p> This drama follows a story about Tian, who got a heart transplant from a kind teacher Torfun. Tian learns about his donor’s life trough a series of diary entries that reveal her secrets and interests. Including her promise to count a thousand stars with chief forest officer Phupha. Tian decides to follow in Torfun's footsteps and fulfill her promise. Now a new volunteer teacher himself, Tian attempts to befriend Phupha who initially gives him the cold shoulder. As the two grow steadily closer, Tian notices his new heart beats quickly whenever he's near the officer. Much like the heart’s previous owner, Tian cannot help but fall for Phupha.</p>
+      <p>(Source: MyDramaList)</p>
+      <p>Adapted from the novel "Tale of a Thousand Stars" (นิทานพันดาว) by Bacteria.</p>
+      <img src="img/atotsh.jpg" alt="image of A Tale of 1000 Stars" width="700px">
+      <p> Country: Thailand </p>
+      <p> Episodes: 10 </p>
+      <p> Aired: Jan 29, 2021 - Apr 2, 2021</p>
+      <p> Aired On: Friday</p>
+      <p>Original Network: GMM 25</p>
+      <p>Duration: 1hr 5min</p>
+      <p>Content Rating: 13+</p>
+      <h2> Review </h2>
+      <h4> General Review</h4>
+        <p>I think its really nice that thailand is going out from the school love genre to a more adult genre (the rating is still 13+ dont worry) such as office love or mafia romance. I can't give too much spoilers but the storyline is so good. Unlike other dramas, where it starts good but ends bad. GMMTV really gave their best on this one. The storyline is really consistent and nice with good angst and love story</p>
+      <h4>Acting</h4>
+        <p>He is a rookie actor, but the way he acts feels like he is doing acting for decades. The emotions was delivered properly, and it transcends from my computer screen. Tian is an extremely complicated character to portray. Apart from the complicated emotions the character undergoes, Mix has to portray the change in Tian after his heart transplant. But it's not a 180-degree change (and there are subtle developments after the heart transplant too), so it's harder than playing two different characters. Mix manages to play Tian before and after the transplant impressively well. It's not often that we have a new actor who manages to portray the character's emotions without any lines, as Mix does in the last episode when he looks around the hut wistfully and starts tearing up.</p>
+        <p>Meanwhile, I don't think anyone is more fit for the character of Phupha rather than Earth. Earth's expressive eyes and effective line delivery is what impressed me. Phupha doesn't have many lines in the series. He's a quite cold person but every time Phupha talks, Earth always delivers the line effectively. </p>
+        <a href="atotscast.html"><h2>Cast</h2></a>
+  </div>
+
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <a href="https://www.instagram.com/x1nyuanism_/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+  <a href="https://pin.it/ytSPZpt"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+  <a href="https://twitter.com/jaykaismm"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 4000);
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>

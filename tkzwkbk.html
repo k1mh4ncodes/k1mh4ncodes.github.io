@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Unspoken Films</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="Homepage.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+      <a href="films.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">FILMS</a>
+      <a href="news.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">NEWS</a>
+      <a href="actors.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ACTORS</a>
+    </div>
+  </div>
+
+  <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+    <a href="Homepage.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="films.html" class="w3-bar-item w3-button w3-padding-large">FILMS</a>
+    <a href="movies.html" class="w3-bar-item w3-button w3-padding-large">MOVIES</a>
+    <a href="news.html" class="w3-bar-item w3-button w3-padding-large">NEWS</a>
+    <a href="actors.html" class="w3-bar-item w3-button w3-padding-large">ACTORS</a>
+  </div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- The Tour Section -->
+  <div class="w3-black" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h1>Takizawa Kabuki ZERO 2020: The Movie</h1>
+      <h2>Summary</h2>
+      <p>"Takizawa Kabuki Zero" movie adaptation with members of "Snow Man", directed by Takizawa Hideaki</p>
+      <p>(Source: MyDramaList)</p>
+      <img src="img/tkzwkbk.jpg" alt="Takizawa Kabuki ZERO 2020: The Movie" width="700px">
+      <p> Country: Japan </p>
+      <p> Runtime: 2hr 19min </p>
+      <p> Released: Dec 4, 2020</p>
+      <p> Content Rating: G - All Ages</p>
+      <h2> Review </h2>
+      <h4> General Review</h4>
+        <p>Takizawa kabuki zero is actually an amazing thing. It's quite refreshing because modern boy groups are introducing foreign fans to Japanese culture. It's an amazing mixture between a concert and a kabuki. There are scenes of modern dance and scenes of really amazing traditional acts. The traditional acts are really stunning. You can see the amount of effort and practice Snowman has done to achieve this.
+        <p>The second section/act is also really amazing Omaru’s character is one of the funniest character i've seen in any media ever. The 4th wall breaks are also really funny. </p>
+      <h4>Cinematography</h4>
+        <p>It actually looks like a stage play. The interactive camera going backstage and through the wings of the stage when abe-chan cat/koala(?) is running to fight the bad guys. The director also did an amazing job making the whole thing look like it's a long continuous shot when in actuality there's a couple takes (i watched this with my dad and he thought it was a one take too). The camera movements it's just impressive. Capturing the vast movements of all the backflips and dancings. </p>
+        <a href="tkzwkbkcast.html"><h2>Cast</h2></a>
+      <h2>Mini Dictionary</h2>
+        <p>Kabuki: a classical form of Japanese theatre, mixing dramatic performance with traditional dance. Kabuki theatre is known for its heavily stylised performances, its glamorous, highly decorated costumes, and for the elaborate kumadori make-up worn by some of its performers.</p>
+      <h2>Fun facts about Takizawa Kabuki ZERO</h2>
+      <ul>
+      <li>Takizawa Kabuki has been going on since 2006, By Hideaki Takizawa</li>
+      <li>This is the first time it has been available in streaming services such as Netflix, The preious years, The Takizawa Kabuki is only available Live and in DVD</li>
+      <li>The play was performed in Shinbashi Enbujo Theatre in Ginza, Tokyo, Japan</li>
+      <li>Shinbashi Enbujo Theatre dates back to 1925, and was renowned for showcasing traditional Japanese theatre. (Source:Takizawa Kabuki - PR Communications, 2020)</li>
+      <li>This is the first time Snowman Has become the main actors of Takizawa Kabuki</li>
+      <li>Snowman has been playing as side characters and background dancers since 2006 (Source:@higuretea - Twitter, 2020)</li>
+      </ul>
+  </div>
+
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <a href="https://www.instagram.com/x1nyuanism_/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+  <a href="https://pin.it/ytSPZpt"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+  <a href="https://twitter.com/jaykaismm"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 4000);
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>

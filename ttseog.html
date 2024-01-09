@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Unspoken Films</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="Homepage.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+      <a href="films.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">FILMS</a>
+      <a href="news.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">NEWS</a>
+      <a href="actors.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ACTORS</a>
+    </div>
+  </div>
+
+  <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+    <a href="Homepage.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="films.html" class="w3-bar-item w3-button w3-padding-large">FILMS</a>
+    <a href="movies.html" class="w3-bar-item w3-button w3-padding-large">MOVIES</a>
+    <a href="news.html" class="w3-bar-item w3-button w3-padding-large">NEWS</a>
+    <a href="actors.html" class="w3-bar-item w3-button w3-padding-large">ACTORS</a>
+  </div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- The Tour Section -->
+  <div class="w3-black" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h1>The Tunnel to Summer, the Exit of Goodbyes</h1>
+      <h2>Summary</h2>
+      <p>Kaoru Touno's family is falling apart. After the death of a sibling and his parents' divorce, he no longer feels any peace at home. Following a heated confrontation with his father, Kaoru runs out of his house and finds himself before a mysterious tunnel, which pulls him in. Bewildered by what he sees inside, he rushes to the exit, picking up a bird that looks identical to his deceased pet on his way out.</p>
+
+      <p>Upon emerging outside, Kaoru realizes that, despite him spending just a few minutes inside the tunnel, an entire week has passed. The bizarre experience leads him to remember the rumors of "Urashima Tunnel"—a passage that grants wishes in exchange for one's lifespan. Given the resurrection of his pet bird, Kaoru cannot help but wonder if another visit can help fix his messed up life.</p>
+
+      <p>However, when he returns to the entrance of the mysterious tunnel, Kaoru realizes that he has been followed by Anzu Hanashiro, a new transfer student in his class. She also knows about the rumors and asks him to help her with an experiment—it turns out that she, too, has a wish that only the tunnel can grant.</p>
+      <p>(Source: MyAnimeList)</p>
+      <img src="img/ttseog.jpg" width="700px">
+      <p> Country: Japan </p>
+      <p> Runtime: 1 hr. 22 min.</p>
+      <p> Released: Sep 9, 2022</p>
+      <p> Content Rating: PG-13 - Teens 13 or older</p>
+      <h2> Review </h2>
+      <h4> Storyline</h4>
+        <p>The storyline is very unique it has so much sentimental value, with great key messages hidden under minimal storytelling. However, the ending of this film seems to be rushed and abrupt. The pacing feels weird. The sentimental scenes end too fast for you to have a dragged, felt emotion</p>
+      <h4>Animation and Voice Acting</h4>
+<p>The animation is really really good. I like how they experiment with colours and how some scenes have more muted colours and some scenes have more bright and vivid colours. It is quite effective to deliver the emotions in the scenes. The voice acting feels genuine and intimate which is truly the cherry on top of the movie. </p>
+        <a href="ttseogcast.html"><h2>Cast</h2></a>
+  </div>
+
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <a href="https://www.instagram.com/x1nyuanism_/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+  <a href="https://pin.it/ytSPZpt"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+  <a href="https://twitter.com/jaykaismm"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 4000);
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
